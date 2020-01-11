@@ -1,9 +1,11 @@
-
+body {
+    height: 100vh;
+  }
 body {
     background-image: url('./assets/computer-cup-desk-drink-434337_EDITED.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
-   background-size:cover;
+    background-size:cover;
 }
 
 
@@ -97,11 +99,17 @@ p{
         margin-top: 0;
     }
 }
-@media (max-width:414px){
+/* @media (max-width:414px){
+    body.custom-background {
+		background-attachment: scroll;
+	}
     body{
         background-attachment: fixed;
         background-size:cover;
         overflow: hidden;
         height: 100%;
-}
-}
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+         
+} */
