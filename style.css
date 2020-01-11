@@ -97,3 +97,9 @@ p{
         margin-top: 0;
     }
 }
+@media (max-width:816px){
+    body{
+        background-attachment: fixed;
+        background-size:cover ;
+}
+}
