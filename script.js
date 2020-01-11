@@ -43,7 +43,7 @@ function gameOuiz(){
 
 choicesList.addEventListener("click",function(event){
     event.preventDefault();
-    
+   
  
     if (event.target.getAttribute("data") === event.target.getAttribute("answer")) {
         console.log(event.target.getAttribute("data"));
@@ -55,12 +55,18 @@ choicesList.addEventListener("click",function(event){
         checkAnswer.textContent = "wrong!";
         checkQuestionsLeft();
     }
-
+    
 }); 
 
 // CHECK IF THERE ARE QUESTIONS LEFT 
 
 function checkQuestionsLeft (){
+    if (timeLeft<0){
+        timeLeft = 0;
+        clearInterval(timeInterval);
+        alert("Sorry, your time is up!");
+        showResult();
+    } else {
     count++;
     if (count === questions.length){
         // alert("end game!");
@@ -70,6 +76,7 @@ function checkQuestionsLeft (){
 
         setTimeout(function(){gameOuiz()},300);
     }
+}
 }
 
 // RENDER SCORE RESULT
@@ -141,12 +148,7 @@ startBtn.addEventListener("click", function(){
 
     wellcomePage.style.display = "none";
     questionPage.style.display = "block";
-
-// if( useChoice === 'color'){
-//     questions = colors;
-// }
-  
-    
+ 
 
 
     if (timeInterval === -1){

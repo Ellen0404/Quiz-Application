@@ -38,6 +38,10 @@ p{
     text-align: center;
  
 }
+.upper-center{
+    margin-top: 50px;
+    text-align: center;
+}
 
 .centerScore{
     margin-top: 150px;
@@ -73,4 +77,23 @@ p{
     background-color:#5c8055;
     color: #e0e56d;
     border: #25574b solid 1px;
+}
+
+.justify-content-center{
+    padding-left: 7%;
+    padding-right: 7%;
+}
+@media (max-width:816px){
+    .col-4{
+        max-width: 100%;
+    }
+    p,h1{
+        padding-top:5%;
+    }
+}
+
+@media (max-width:816px){
+    .center{
+        margin-top: 0;
+    }
 }

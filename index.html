@@ -10,7 +10,7 @@
 </head>
 <body>
     
-    <div id = "upper" class ="container center">
+    <div id = "upper" class ="container upper-center">
         <div class="row">
             <div class="col-md-6">
                 <strong><a id ="highscoresPage" style="color:#67a093" href ="./quiz.html">View Highscores</a></strong>
@@ -22,35 +22,40 @@
     </div>
 
     <!-- // WELLCOME PAGE  -->
-    <div id ="wellcomePage" class="modal center">
+    <div id ="wellcomePage" class="modal center ">  
     <h1 id = "title">Quiz application</h1><br>
     <p class= "text-align: justify">Wellcome to my Quiz Application!<br>Try to answer the following code-related questions within the 75 seconds.<br>
          Keep in mind that incorrect answer will reduse your Time by 15 seconds!</p>
     <button class =" button btn btn-info" id ="startquiz">Start Quiz</button>
+   
+      
     </div>
 
     <!-- QUIZ PAGE -->
     <div id ="questionPage" class ="displayPage center">
-        <br><h4 id="questionSpace"></h4><br>
         <div class="row justify-content-center">
+        <br><span id="questionSpace"></span><br>
+        </div>
+        <br><div class="row justify-content-center">
         <div id="choices-list" class = "col-4 d-flex flex-column"></div>
         </div>
-        <br>
-        
-        <span id ="check-answer" class ="center"></span>
-      </div>
+        <div class="row justify-content-center">
+        <span id ="check-answer" class ="col-4 d-flex flex-column"></span>
+        </div>
     </div>
 
     <!-- SCORE RESULT PAGE -->
     <div id ="scoreResultPage" class ="displayPage center">
+       
         <h4><strong>All done</strong></h4><br>
         <h5 id ="finalScore"></h5><br>
+        <div class="row justify-content-center">
         <form>
             <span>Enter initials: </span>
             <input type="text" id="initials"/>
             <button class ="btn btn-info" id="sumbitBtn">Submit</button>
         </form>
-
+    </div>
     </div>
 
     <!-- HIGHSCORES PAGE -->
