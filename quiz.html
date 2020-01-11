@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+ 
+    <div class ="centerScore">
+        <h4><strong>Highscores</strong></h4>
+        <span id ="highscoresResult"></span><br><br><br>
+        <div>
+            <span id ="viewHighscores"></span><br><br><br>
+            <a class="btn btn-info" href="./index.html" role="button">Go Back</a>
+        </div>
+       
+    </div>
+<script>
+    var scoreResult = localStorage.getItem("score");
+    var initialsResult = localStorage.getItem("initials");
+    var viewHighscores = document.querySelector("#viewHighscores");
+    viewHighscores.textContent = initialsResult + "-" + scoreResult;
+</script>
+
+    <script src="./script.js"></script>>
+    <script src="./questions.js"></script>
+</body>
+</html>

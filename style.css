@@ -1,0 +1,76 @@
+
+body {
+    background-image: url('./assets/computer-cup-desk-drink-434337_EDITED.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+   background-size:cover;
+}
+
+
+h1 {
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+}
+p{
+    padding-top:50px;
+}
+.container {
+    padding: 20px ;
+}
+.button {
+    margin: 0 auto;
+    display: block;
+    margin-top: 40px;
+    
+}
+.modal {
+    display: block;  
+    position: relative;
+  }
+
+.displayPage{
+    display: none; 
+   
+}  
+.center{
+    margin-top: 50px;
+    text-align: center;
+ 
+}
+
+.centerScore{
+    margin-top: 150px;
+    text-align: center;
+ 
+}
+.choice {
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 40%;
+  }
+  
+  #questionField{
+    margin: 0 auto; 
+  }
+
+ 
+  button {
+    
+    border: rgba(248, 245, 247, 0.808) solid 1px;
+    border-radius: 10px;
+    margin: 10px;
+    align-content: center;
+
+}
+.btn-info{
+    color: rgb(238, 248, 147);
+    background-color: #76aa9e;
+}
+.btn-info:hover {
+    background-color:#5c8055;
+    color: #e0e56d;
+    border: #25574b solid 1px;
+}
