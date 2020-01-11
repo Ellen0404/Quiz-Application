@@ -22,9 +22,12 @@ var count = 0;
 
 function gameOuiz(){
     
+
+    
+    
     choicesList.innerHTML = "";
     checkAnswer.innerHTML = "";
-   
+
     
     questionSpace.textContent = questions[count].title;
  
@@ -38,19 +41,19 @@ function gameOuiz(){
         list.setAttribute("answer",questions[count].answer);
         choicesList.appendChild(list);
     }
-
 }
+
 
 choicesList.addEventListener("click",function(event){
     event.preventDefault();
-   
  
-    if (event.target.getAttribute("data") === event.target.getAttribute("answer")) {
+ 
+    if (event.target.getAttribute("data") === event.target.getAttribute("answer") ) {
         console.log(event.target.getAttribute("data"));
         console.log(event.target.getAttribute("answer"));
         checkAnswer.textContent = "correct!";
         checkQuestionsLeft();
-     } else {
+    } else {
         timeLeft = timeLeft - 15;
         checkAnswer.textContent = "wrong!";
         checkQuestionsLeft();
@@ -61,12 +64,7 @@ choicesList.addEventListener("click",function(event){
 // CHECK IF THERE ARE QUESTIONS LEFT 
 
 function checkQuestionsLeft (){
-    if (timeLeft<0){
-        timeLeft = 0;
-        clearInterval(timeInterval);
-        alert("Sorry, your time is up!");
-        showResult();
-    } else {
+    
     count++;
     if (count === questions.length){
         // alert("end game!");
@@ -77,7 +75,7 @@ function checkQuestionsLeft (){
         setTimeout(function(){gameOuiz()},300);
     }
 }
-}
+
 
 // RENDER SCORE RESULT
 
@@ -90,10 +88,14 @@ function renderScore(){
 // SCORE RESULT PAGE
 
 function showResult(){
+    
     questionPage.style.display = "none";
     var scoreResultPage = document.querySelector("#scoreResultPage");
     scoreResultPage.style.display ="block"
-  
+
+   if (timeLeft<0){
+       timeLeft = 0;
+   }
     document.querySelector("#finalScore").textContent = "Your final score is " + timeLeft;
     document.querySelector("#time").textContent = timeLeft;
 
@@ -155,10 +157,10 @@ startBtn.addEventListener("click", function(){
         timeInterval = setInterval(function(){
             timeLeft--;
             time.textContent=timeLeft;
-    if (timeLeft === 0){
-        
+    if (timeLeft === 0 ){
+      
         clearInterval(timeInterval);
-        alert("Sorry, your time is up!");
+        // alert("Sorry, your time is up!");
         showResult();
     }
         }, 1000);
