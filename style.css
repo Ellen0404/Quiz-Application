@@ -97,9 +97,10 @@ p{
         margin-top: 0;
     }
 }
-@media (max-width:816px){
+@media (max-width:414px){
     body{
         background-attachment: fixed;
-        background-size:100% 100% ;
+        background-size:cover;
+        background-attachment: scroll; 
 }
 }
