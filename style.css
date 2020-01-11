@@ -101,6 +101,7 @@ p{
     body{
         background-attachment: fixed;
         background-size:cover;
-        background-attachment: scroll; 
+        overflow: hidden;
+        height: 100%;
 }
 }
