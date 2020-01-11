@@ -100,6 +100,6 @@ p{
 @media (max-width:816px){
     body{
         background-attachment: fixed;
-        background-size:cover ;
+        background-size:100% 100% ;
 }
 }
