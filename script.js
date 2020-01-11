@@ -72,7 +72,7 @@ function checkQuestionsLeft (){
         showResult();
     } else {
 
-        setTimeout(function(){gameOuiz()},300);
+        setTimeout(function(){gameOuiz()},350);
     }
 }
 
@@ -160,7 +160,6 @@ startBtn.addEventListener("click", function(){
     if (timeLeft === 0 ){
       
         clearInterval(timeInterval);
-        // alert("Sorry, your time is up!");
         showResult();
     }
         }, 1000);
