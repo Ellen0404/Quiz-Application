@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="./style.css" rel="stylesheet">
 </head>
+
 <body>
-    
-    <div id = "upper" class ="container upper-center">
+
+    <div id="upper" class="container upper-center">
         <div class="row">
             <div class="col-md-6">
-                <strong><a id ="highscoresPage" style="color:#67a093" href ="./quiz.html">View Highscores</a></strong>
+                <strong><a id="highscoresPage" style="color:#67a093" href="./quiz.html">View Highscores</a></strong>
             </div>
             <div class="col-md-6">
                 <span>Time: <span id="time">0</span></span>
@@ -22,56 +24,59 @@
     </div>
 
     <!-- // WELLCOME PAGE  -->
-    <div id ="wellcomePage" class="modal center ">  
-    <h1 id = "title">Quiz application</h1><br>
-    <p class= "text-align: justify">Wellcome to my Quiz Application!<br>Try to answer the following code-related questions within the 75 seconds.<br>
-        Your time left is your score. Keep in mind that incorrect answer will reduse your time by 15 seconds!</p>
-    <button class =" button btn btn-info" id ="startquiz">Start Quiz</button>
-   
-      
+    <div id="wellcomePage" class="modal center ">
+        <h1 id="title">Quiz application</h1><br>
+        <p class="text-align: justify">Wellcome to my Quiz Application!<br>Try to answer the following code-related
+            questions within the 75 seconds.<br>
+            Your time left is your score. Keep in mind that incorrect answer will reduce your time by 15 seconds!</p>
+        <button class=" button btn btn-info" id="startquiz">Start Quiz</button>
+
+
     </div>
 
     <!-- QUIZ PAGE -->
-    <div id ="questionPage" class ="displayPage center">
+    <div id="questionPage" class="displayPage center">
         <div class="row justify-content-center">
-        <br><span id="questionSpace"></span><br>
+            <br><span id="questionSpace"></span><br>
         </div>
-        <br><div class="row justify-content-center">
-        <div id="choices-list" class = "col-4 d-flex flex-column"></div>
+        <br>
+        <div class="row justify-content-center">
+            <div id="choices-list" class="col-4 d-flex flex-column"></div>
         </div>
         <div class="row justify-content-center">
-        <span id ="check-answer" class ="col-4 d-flex flex-column"></span>
+            <span id="check-answer" class="col-4 d-flex flex-column"></span>
         </div>
     </div>
 
     <!-- SCORE RESULT PAGE -->
-    <div id ="scoreResultPage" class ="displayPage center">
-       
+    <div id="scoreResultPage" class="displayPage center">
+
         <h4><strong>All done</strong></h4><br>
-        <h5 id ="finalScore">final score</h5><br>
+        <h5 id="finalScore">final score</h5><br>
         <div class="row justify-content-center">
-        <form>
-            <span>Enter initials: </span>
-            <input type="text" id="initials"/>
-            <button class ="btn btn-info" id="sumbitBtn">Submit</button>
-        </form>
-    </div>
+            <form>
+                <span>Enter initials: </span>
+                <input type="text" id="initials" />
+                <button class="btn btn-info" id="sumbitBtn">Submit</button>
+            </form>
+        </div>
     </div>
 
     <!-- HIGHSCORES PAGE -->
-    <div id ="highscores" class ="displayPage center">
+    <div id="highscores" class="displayPage center">
         <h4><strong>Highscores</strong></h4><br>
-        <span id ="highscoresResult"></span><br><br><br>
-        <button class ="btn btn-info" id="goBackBtn">Go Back</button>
-        <button class ="btn btn-info" id="clearBtn">Clear Highscores</button>
+        <span id="highscoresResult"></span><br><br><br>
+        <button class="btn btn-info" id="goBackBtn">Go Back</button>
+        <button class="btn btn-info" id="clearBtn">Clear Highscores</button>
 
     </div>
 
 
-   
+
 
     <script src="./script.js"></script>
     <script src="./questions.js"></script>
-    
+
 </body>
+
 </html>
